@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fandom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main-div">
+        <img src="./download-removebg-preview (11).png" alt="" class="logo">
+        <i class="fa-solid fa-magnifying-glass" style="color: #321515;"></i>
+        <div class="rocket">
+            <i class="fa-solid fa-rocket" style="color: #321515;"></i>
+            <p class="rocket-p">Fan Central</p>
+        </div>
+        <div class="game">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="wds-icon">
+                <path
+                    d="M11.614 1.057a.814.814 0 0 0-.505.396c-.087.164-.089.197-.101 1.856l-.011 1.689-4.269.011-4.268.011-.321.101c-.501.159-.833.365-1.243.775-.4.4-.6.717-.771 1.217L.02 7.42l-.011 4c-.013 4.391-.016 4.322.227 4.903.211.503.382.701 2.061 2.38 1.679 1.679 1.877 1.85 2.38 2.061.591.247.257.236 7.323.236 7.066 0 6.732.011 7.323-.236.503-.211.701-.382 2.38-2.061 1.679-1.679 1.85-1.877 2.061-2.38.243-.581.24-.512.227-4.903l-.011-4-.105-.307c-.171-.5-.371-.817-.771-1.217-.41-.41-.742-.616-1.243-.775l-.321-.101-4.268-.011-4.268-.011-.012-1.689c-.012-1.658-.014-1.692-.101-1.856a.874.874 0 0 0-.213-.254c-.264-.189-.721-.249-1.064-.142m9.802 6.04c.199.099.388.288.487.487.075.151.077.278.077 4.016v3.86l-.107.18c-.133.223-3.08 3.163-3.273 3.266-.135.071-.383.074-6.6.074s-6.465-.003-6.6-.074c-.193-.103-3.14-3.043-3.273-3.266l-.107-.18-.011-3.76c-.008-2.572.002-3.815.031-3.933a1.02 1.02 0 0 1 .686-.721c.085-.025 3.487-.037 9.334-.033 9.012.007 9.203.009 9.356.084m-14.802 2.96a.814.814 0 0 0-.505.396c-.08.15-.09.236-.102.857l-.014.69h-.59c-.826 0-1.104.097-1.294.453-.074.139-.089.231-.089.547 0 .331.013.403.1.558.11.197.294.34.515.401.08.022.419.041.755.041H6v.61c0 .335.019.675.041.755.107.385.396.597.855.626.485.031.803-.109.984-.433.094-.167.101-.22.114-.868l.014-.69h.606c.333 0 .671-.019.751-.041a.842.842 0 0 0 .515-.401c.087-.156.1-.226.099-.558-.001-.313-.017-.409-.089-.547-.188-.355-.467-.453-1.292-.453h-.59l-.015-.69c-.017-.769-.063-.932-.315-1.111-.264-.189-.721-.249-1.064-.142m9.885-.017a3.05 3.05 0 0 0-2.385 2.12c-.135.434-.135 1.246 0 1.68a3.086 3.086 0 0 0 2.046 2.046c.434.135 1.246.135 1.68 0a3.086 3.086 0 0 0 2.046-2.046c.135-.434.135-1.246 0-1.68-.305-.981-1.076-1.753-2.025-2.031-.361-.106-1.029-.149-1.362-.089m.811 2.021c.378.112.69.537.69.94 0 .33-.216.695-.516.871-.156.091-.23.108-.484.108s-.328-.017-.484-.108c-.581-.342-.683-1.098-.212-1.569.279-.279.612-.359 1.006-.242">
+                </path>
+            </svg>
+            <p class="game-p">Games</p>
+        </div>
+        <div class="anime">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="wds-icon">
+                <path
+                    d="M3.499 3.043c-.641.108-1.104.355-1.603.853-.4.4-.6.717-.771 1.217l-.105.307-.011 5.02c-.01 4.426-.004 5.057.051 5.33.076.375.221.728.433 1.05.184.279 3.161 3.29 3.527 3.567.287.218.582.371.96.498l.28.095 5.58.011c6.13.013 5.891.021 6.483-.227.503-.211.701-.382 2.38-2.061 1.679-1.679 1.85-1.877 2.061-2.38.247-.589.24-.412.227-5.903l-.011-5-.105-.307c-.171-.5-.371-.817-.771-1.217-.41-.41-.741-.616-1.243-.775l-.321-.101-8.42-.006c-4.631-.003-8.511.01-8.621.029m16.917 2.054c.199.099.388.288.487.487.075.152.077.289.077 5.016 0 4.658-.003 4.866-.074 5-.103.193-3.043 3.14-3.266 3.273l-.18.107H12c-5.232 0-5.466-.003-5.6-.074-.192-.101-3.184-3.087-3.293-3.286l-.087-.16-.011-4.76c-.008-3.276.001-4.814.031-4.933a1.02 1.02 0 0 1 .686-.721c.085-.025 3.13-.037 8.334-.033 8.023.007 8.203.009 8.356.084M7.48 7.657c-.425.119-.596.248-1.449 1.096-.55.546-.857.881-.91.995a.809.809 0 0 0-.002.682c.095.211.408.527.621.629.203.097.516.099.7.004.077-.04.459-.389.85-.776l.709-.703.731.723c.672.666.748.729.96.795.219.069.24.069.448.004.425-.134.829-.623.829-1.004 0-.346-.114-.505-.959-1.342-.833-.824-1.057-.992-1.466-1.098-.282-.073-.808-.075-1.062-.005m8 0c-.425.119-.596.248-1.449 1.096-.55.546-.857.881-.91.995a.809.809 0 0 0-.002.682c.095.211.408.527.621.629.203.097.516.099.7.004.077-.04.459-.389.85-.776l.709-.703.731.723c.672.666.748.729.96.795.219.069.24.069.448.004.425-.134.829-.623.829-1.004 0-.346-.114-.505-.959-1.342-.833-.824-1.057-.992-1.466-1.098-.282-.073-.808-.075-1.062-.005m-6.866 6.4a.814.814 0 0 0-.505.396c-.074.139-.089.231-.089.547 0 .331.013.403.1.558.11.197.294.34.515.401.197.055 6.533.055 6.73 0a.842.842 0 0 0 .515-.401c.087-.156.1-.226.099-.558-.001-.433-.081-.645-.301-.801-.28-.2-.267-.199-3.694-.196-2.512.002-3.24.014-3.37.054">
+                </path>
+            </svg>
+            <p class="anime-p">Anime</p>
+        </div>
+        <div class="movie">
+            <i class="fa-solid fa-film" style="color: #321515;"></i>
+            <p class="movie-p">Movie</p>
+        </div>
+        <div class="tv">
+            <i class="fa-solid fa-tv" style="color: #321515;"></i>
+            <p class="tv-p">Tv</p>
+        </div>
+        <div class="video">
+            <i class="fa-solid fa-video" style="color: #321515;"></i>
+            <p class="video-p">Video</p>
+        </div>
+        <div class="wikis">
+            <i class="fa-solid fa-book-open" style="color: #321515;"></i>
+            <p class="wikis-p">Wikis</p>
+        </div>
+        <div class="user">
+            <i class="fa-solid fa-user" style="color: #321515;"></i>
+        </div>
+        <div class="hide-part" style="display: none;">
+            <p class="hide-p">Don't have an account</p>
+            <button class="register-button">Register</button>
+            <button class="sign-up-button">Sign Up</button>
+        </div>
+    </div>
+   
+    <div class="background-part">
+        <img src="https://tpc.googlesyndication.com/simgad/14761811166440868917" alt="" class="reklam">
+    </div>
+    <div class="body-conatainer">
+        <div class="upper-part">
+            <div class="main-container">
+                <img src="https://static.wikia.nocookie.net/6a181c72-e8bf-419b-b4db-18fd56a0eb60" alt=""
+                    class="second-logo">
+                <input type="text" placeholder="Search the world's largest fan wiki platform" class="search">
+                <i class="fa-solid fa-magnifying-glass" style="color: #321515;"></i>
+            </div>
+            <div class="button">
+                <a href="./fandomSign.html" class="sign-link"><button class="sign">SIGN IN</button></a>
+                <a href="./fandomRegister.html" class="register-a">
+                    <button class="register">
+                        <i class="fa-solid fa-user"></i>
+                        <p class="register-p">REGISTER</p>
+                    </button></a>
+            </div>
+        </div>
+        <div class="films">
+            <div class="film-list">
+                <div class="film-info">
+                    <img src="https://static.wikia.nocookie.net/0b93cbbc-1212-418d-9b07-8912e3076e26/scale-to-width-down/500;"
+                        alt="" class="first">
+                    <a href="" class="games">GAMES</a>
+                    <p class="inside-p">PlayStation Plus Free Games For August 2024 Revealed</p>
+                </div>
+                <div class="film-infoo">
+                    <img src="https://static.wikia.nocookie.net/8680dc43-24dd-4138-b734-0eaea089b138/scale-to-width-down/500;"
+                        alt="" class="first">
+                    <a href="" class="games">GAMES</a>
+                    <p class="inside-second-p">Best Madden NFL 25 Players At Every Position (So Far)</p>
+                </div>
+                <div class="film-infoo-third">
+                    <img src="https://static.wikia.nocookie.net/6e0de77f-dcb3-4453-9098-79de337af3df/scale-to-width-down/500;"
+                        alt="" class="first">
+                    <a href="" class="games">GAMES</a>
+                    <p class="inside-third-p">35 Years Ago, The Game Boy Made Mainstream Gaming Just A Little Stranger
+                    </p>
+                </div>
+                <div class="film-infoo-fourth">
+                    <img src="https://static.wikia.nocookie.net/c82de361-e53f-4312-ae9f-a55b8b6367ec/scale-to-width-down/500;"
+                        alt="" class="first">
+                    <a href="" class="games">MOVIE</a>
+                    <p class="inside-fourth-p">The 15 Best Ryan Reynolds Movies, According To Metacritic</p>
+                </div>
+                <div class="film-infoo-fifth">
+                    <img src="https://static.wikia.nocookie.net/9fa85d38-fa67-438c-86de-785b67846f52/scale-to-width-down/500;"
+                        alt="" class="first">
+                    <a href="" class="games">MOVIE</a>
+                    <p class="inside-fifth-p">Marvel Has One Way To Make RDJ Doom And Secret Wars Work</p>
+                </div>
+                <div class="film-infoo-sixth">
+                    <img src="https://static.wikia.nocookie.net/f2c20c58-9fa7-473a-b296-43a1db4f73b4/scale-to-width-down/500;"
+                        alt="" class="first">
+                    <a href="" class="games">GAMES</a>
+                    <p class="inside-sixth-p">Star Wars Outlaws Hands-On Preview: Hey Kid, You Wanna Do Space Crimes?
+                    </p>
+                </div>
+                <div class="film-infoo-seventh">
+                    <img src="https://static.wikia.nocookie.net/4c4ba3bd-70b4-4242-87bd-efd1794fabd6/scale-to-width-down/500;"
+                        alt="" class="first">
+                    <a href="" class="games">GAMES</a>
+                    <p class="inside-seventh-p">PlayStation Back To School Sale: Save Over 50% On PS5 Exclusives, $200
+                        On
+                        PSVR 2
+                    </p>
+                </div>
+                <div class="film-infoo-eight">
+                    <img src="https://static.wikia.nocookie.net/e817423a-a581-4c57-a41a-3bbc8b9c9cb4/scale-to-width-down/500;"
+                        alt="" class="first">
+                    <a href="" class="games">VIDEO</a>
+                    <p class="inside-eight-p">The Complete History of Deadpool</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="next-part">
+        <div class="wikis-info">
+            <i class="fa-solid fa-book-open" style="color: #321515;"></i>
+            <p class="top">TOP WIKIS</p>
+        </div>
+        <div class="cammon-part">
+            <div class="games-part">
+                <p class="upper-info">GAMES</p>
+                <p class="down-p-item">Terraria</p>
+                <p class="down-p">Minecraft</p>
+                <p class="down-p">Genshin Impact</p>
+            </div>
+            <div class="just-border"></div>
+            <div class="movie-part">
+                <p class="upper-info">MOVIES</p>
+                <p class="down-p-item">Star Wars</p>
+                <p class="down-p">Harry Potter</p>
+                <p class="down-p">Marvel</p>
+            </div>
+            <div class="just-border"></div>
+            <div class="tv-part">
+                <p class="upper-info">TV</p>
+                <p class="down-p-item">Memories Alpha</p>
+                <p class="down-p">Arrowverse</p>
+                <p class="down-p">Sponge Bobie</p>
+            </div>
+            <div class="just-border"></div>
+            <div class="anime-part">
+                <p class="upper-info">Anime</p>
+                <p class="down-p-item">One Piece</p>
+                <p class="down-p">Naruto</p>
+                <p class="down-p">My Hero Academy</p>
+            </div>
+            <div class="just-border"></div>
+            <div class="right-part">
+                <p class="right-part-p">Plus over <b>250,000</b> more to explore</p>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel-head">
+            <p class="watch">MOVIE</p>
+            <p class="view">View All</p>
+            <i class="fa-solid fa-caret-right"></i>
+        </div>
+        <div class="watch-list">
+            <p class="popular">Popular Wiki Pages in Movies</p>
+            <div class="watch-list-item">
+                <div class="harry-potter">
+                    <img src="https://static.wikia.nocookie.net/aad30c25-f98b-4aae-b024-901c456af1ec/scale-to-height-down/400;
+                            " alt="" class="harry-img">
+                    <p class="film-name">Harry Potter</p>
+                    <div class="harry-wiki">
+                        <i class="fa-solid fa-book-open"></i>
+                        <p class="wiki-item">Harry Potter Wiki</p>
+                    </div>
+                </div>
+                <div class="matrix">
+                    <img src="./neomatrix.jpg" alt="" class="harry-img">
+                    <p class="film-name">Neo</p>
+                    <div class="matrix-wiki">
+                        <i class="fa-solid fa-book-open"></i>
+                        <p class="wiki-item">Matrix Wiki</p>
+                    </div>
+                </div>
+                <div class="harley-quin">
+                    <img src="./harleyquinn.jpg" alt="" class="harry-img">
+                    <p class="film-name">Harley Quinn</p>
+                    <div class="harley-wiki">
+                        <i class="fa-solid fa-book-open"></i>
+                        <p class="wiki-item-dif">DC Extended Universe</p>
+                    </div>
+                </div>
+                <div class="snake-eyes">
+                    <img src="./snakeeyes.jpg" alt="" class="harry-img">
+                    <p class="film-name">Snake Eyes</p>
+                    <div class="snake-wiki">
+                        <i class="fa-solid fa-book-open"></i>
+                        <p class="wiki-item">G.I.Joe Wiki</p>
+                    </div>
+                </div>
+                <div class="princesses">
+                    <img src="./disneyprincess.jpg" alt="" class="harry-img">
+                    <p class="film-name">Disney Princess</p>
+                    <div class="snake-wiki">
+                        <i class="fa-solid fa-book-open"></i>
+                        <p class="wiki-item">Disney Wiki</p>
+                    </div>
+                </div>
+                <div class="godzilla">
+                    <img src="./godzilla.jpg" alt="" class="harry-img">
+                    <p class="film-name">Godzilla</p>
+                    <div class="snake-wiki">
+                        <i class="fa-solid fa-book-open"></i>
+                        <p class="wiki-item">Monster Wiki</p>
+                    </div>
+                </div>
+            </div>
+            <p class="section">Top News Stories in movies</p>
+            <div class="row">
+                <div class="deadpool">
+                    <img src="https://static.wikia.nocookie.net/c82de361-e53f-4312-ae9f-a55b8b6367ec/scale-to-width-down/800"
+                        alt="" class="dead">
+                    <p class="game-spot">GameSpot 1d</p>
+                    <div class="white-part">
+                        <h1 class="best">The 15 Best Ryan Reynolds Movies,According To Metacritic</h1>
+                        <p class="best-item">
+                            From Deadpool to The Croods,here are the movies critics enjoyed the most.
+                        </p>
+                    </div>
+                </div>
+                <div class="strange">
+                    <img src="https://static.wikia.nocookie.net/9fa85d38-fa67-438c-86de-785b67846f52/scale-to-width-down/800"
+                        alt="" class="dead">
+                    <p class="game-spot-second">GameSpot 1d</p>
+                    <div class="white-part">
+                        <h1 class="best">Marvel Has One Way To Make RDJ Doom And Secret Wars Work</h1>
+                        <p class="best-item">
+                            Despite a messy couple of phases, the MCU can still pull this off, but its options are slim.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row-item">
+                <div class="deadpool">
+                    <img src="https://static.wikia.nocookie.net/9c4d2cea-e806-4d14-ab59-dcda3195e6c6/scale-to-width-down/800"
+                        alt="" class="dead">
+                    <p class="game-spot">GameSpot 2d</p>
+                    <div class="white-part">
+                        <h1 class="best">Biggest Superhero Movie Box Office Opening Weekends-Where Deadpool 3 Ranks</h1>
+                        <p class="best-item">
+                            Deadpool And Wolverine is in theaters now and is surging up the charts.
+                        </p>
+                    </div>
+                </div>
+                <div class="strange">
+                    <img src="https://static.wikia.nocookie.net/74ad482b-a5e9-41e6-a729-2cd134873a0c/scale-to-width-down/800"
+                        alt="" class="dead">
+                    <p class="game-spot">GameSpot 5d</p>
+                    <div class="white-part">
+                        <h1 class="best">SDCC 2024: The Biggest News, Announcements, And Trailers From Comic-Con</h1>
+                        <p class="best-item">
+                            There's a lot of news happening, and we're keeping you up-to-date
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="next-page">
+        <div class="border-bottom"></div>
+        <div class="third-page">
+            <div class="panel-head-item">
+                <p class="watch">GAMES</p>
+                <p class="view">View All</p>
+                <i class="fa-solid fa-caret-right"></i>
+            </div>
+            <div class="watch-list-two">
+                <p class="popular">Popular Wiki Pages in Games</p>
+                <div class="watch-list-item">
+                    <div class="harry-potter">
+                        <img src="./ellietlou.jpg" alt="" class="harry-img">
+                        <p class="film-name">Ellie</p>
+                        <div class="snake-wiki-item">
+                            <i class="fa-solid fa-book-open"></i>
+                            <p class="wiki-item-new">The Last Of Us Wiki</p>
+                        </div>
+                    </div>
+                    <div class="cammon-thing">
+                        <img src="./laracroft.jpg" alt="" class="harry-img">
+                        <p class="film-name">Lara Croft</p>
+                        <div class="snake-wiki-item">
+                            <i class="fa-solid fa-book-open"></i>
+                            <p class="wiki-item-new">Tomb Raider Wiki</p>
+                        </div>
+                    </div>
+                    <div class="cammon-thing">
+                        <img src="./nathandrake.jpg" alt="" class="harry-img">
+                        <p class="film-name">Nathan Drake</p>
+                        <div class="snake-wiki-item">
+                            <i class="fa-solid fa-book-open"></i>
+                            <p class="wiki-item-neww">Uncharted Wiki</p>
+                        </div>
+                    </div>
+                    <div class="cammon-thing">
+                        <img src="./link.jpg" alt="" class="harry-img">
+                        <p class="film-name">Link</p>
+                        <div class="snake-wiki-itemm">
+                            <i class="fa-solid fa-book-open"></i>
+                            <p class="wiki-item-neww">Zelda Wiki</p>
+                        </div>
+                    </div>
+                    <div class="cammon-thing">
+                        <img src="./pikachu.jpg" alt="" class="harry-img">
+                        <p class="film-name">Pikachu</p>
+                        <div class="snake-wiki-item">
+                            <i class="fa-solid fa-book-open"></i>
+                            <p class="wiki-item-neww">Pokemon Wiki</p>
+                        </div>
+                    </div>
+                    <div class="cammon-thing">
+                        <img src="./rathalos.jpg" alt="" class="harry-img">
+                        <p class="film-name">Rathalos</p>
+                        <div class="snake-wiki-item">
+                            <i class="fa-solid fa-book-open"></i>
+                            <p class="wiki-item-new">Monster Hunter Wiki</p>
+                        </div>
+                    </div>
+                    <div class="cammon-thing">
+                        <img src="./mortalkombatmileena.jpg" alt="" class="harry-img">
+                        <p class="film-name">Mileena</p>
+                        <div class="snake-wiki-item">
+                            <i class="fa-solid fa-book-open"></i>
+                            <p class="wiki-item-new">Mortal Kombat Wiki</p>
+                        </div>
+                    </div>
+                    <div class="cammon-thing">
+                        <img src="./insomniac.jpg" alt="" class="harry-img">
+                        <p class="film-name">Miles Morales</p>
+                        <div class="snake-wiki-item">
+                            <i class="fa-solid fa-book-open"></i>
+                            <p class="wiki-item-new">Spider-Man Wiki</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="section-new">Top News Stories in movies</p>
+            <div class="row-new">
+                <div class="play">
+                    <img src="https://static.wikia.nocookie.net/0b93cbbc-1212-418d-9b07-8912e3076e26/scale-to-width-down/800"
+                        alt="" class="dead-img">
+                    <p class="game-spot-item">GameSpot 14h</p>
+                    <div class="white-part-item">
+                        <h1 class="best">PlayStation Plus Free Games For August 2024 Revealed</h1>
+                        <p class="best-item">
+                            PS Plus subscribers can get a spooky adventure and a massive collection of Lego Star Wars
+                            fun in August.
+                        </p>
+                    </div>
+                </div>
+                <div class="play-item">
+                    <img src="https://static.wikia.nocookie.net/8680dc43-24dd-4138-b734-0eaea089b138/scale-to-width-down/800"
+                        alt="" class="dead-img">
+                    <p class="game-spot-item">GameSpot 16h</p>
+                    <div class="white-part-item">
+                        <h1 class="best">Best Madden NFL 25 Players At Every Position (So Far)</h1>
+                        <p class="best-item">
+                            Electronic Arts is revealing the game's top players in each position.
+                        </p>
+                    </div>
+                </div>
+                <div class="play-item">
+                    <img src="https://static.wikia.nocookie.net/6e0de77f-dcb3-4453-9098-79de337af3df/scale-to-width-down/800"
+                        alt="" class="dead-img">
+                    <p class="game-spot-item">GameSpot 16h</p>
+                    <div class="white-part-item">
+                        <h1 class="best">35 Years Ago, The Game Boy Made Mainstream Gaming Just A Little Stranger</h1>
+                        <p class="best-item">
+                            Games like Link's Awakening represent the handheld's ability to get weird.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row-new-second">
+                <div class="play">
+                    <img src="https://static.wikia.nocookie.net/ff2098de-81b1-4c02-a9b6-7ed8929ade2b/scale-to-width-down/800"
+                        alt="" class="dead-img">
+                    <p class="game-spot-item">GameSpot 14h</p>
+                    <div class="white-part-item">
+                        <h1 class="best">Gamescom 2024: Games We Want To Learn More About</h1>
+                        <p class="best-item">
+                            The world's largest gaming fair is back
+                        </p>
+                    </div>
+                </div>
+                <div class="play-item">
+                    <img src="https://static.wikia.nocookie.net/f2c20c58-9fa7-473a-b296-43a1db4f73b4/scale-to-width-down/800"
+                        alt="" class="dead-img">
+                    <p class="game-spot-item">GameSpot 16h</p>
+                    <div class="white-part-item">
+                        <h1 class="best">Star Wars Outlaws Hands-On Preview: Hey Kid, You Wanna Do Space Crimes?</h1>
+                        <p class="best-item">
+                            Electronic Arts is revealing the game's top players in each position.
+                        </p>
+                    </div>
+                </div>
+                <div class="play-item">
+                    <img src="https://static.wikia.nocookie.net/4c4ba3bd-70b4-4242-87bd-efd1794fabd6/scale-to-width-down/800"
+                        alt="" class="dead-img">
+                    <p class="game-spot-item">GameSpot 16h</p>
+                    <div class="white-part-item">
+                        <h1 class="best">35 Years Ago, The Game Boy Made Mainstream Gaming Just A Little Stranger</h1>
+                        <p class="best-item">
+                            Games like Link's Awakening represent the handheld's ability to get weird.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="last-page">
+        <div class="last-p-item">
+            <h1 class="last">The latest trends, delivered straight to your inbox.</h1>
+            <p class="stay">Stay up to date on all the latest in gaming and entertainment.</p>
+            <input type="email" class="email" placeholder="Email Address">
+            <button class="sign-up">Sign Up</button>
+        </div>
+        <div class="img-part">
+            <img src="https://static.wikia.nocookie.net/f986bbe3-d988-415a-be90-95912d7a7bdc" alt="">
+        </div>
+    </div>
+    <div class="end">
+        <div class="inside">
+            <div class="inside-first">
+                <img src="https://static.wikia.nocookie.net/6a181c72-e8bf-419b-b4db-18fd56a0eb60" alt=""
+                    class="logo-second">
+                <p class="end-p">EXPLORE PROPERTIES</p>
+                <a href="" class="last-a">Fandom</a>
+                <a href="" class="last-a">Muthead</a>
+                <a href="" class="last-a">Fanatical</a>
+                <p class="follow">Follow Us</p>
+                <div class="social-media">
+                    <i class="fa-brands fa-facebook-f" style="color: white;"></i>
+                    <i class="fa-brands fa-twitter" style="color: white;"></i>
+                    <i class="fa-brands fa-youtube" style="color: white;"></i>
+                    <i class="fa-brands fa-instagram" style="color: white;"></i>
+                    <i class="fa-brands fa-linkedin-in" style="color: white;"></i>
+                </div>
+            </div>
+            <div class="inside-second">
+                <p class="view-p">OVERVIEW</p>
+                <a href="" class="about">What Is Fandom?</a>
+                <a href="" class="about">About</a>
+                <a href="" class="about">Careers</a>
+                <a href="" class="about">Press</a>
+                <a href="" class="about">Contact</a>
+                <a href="" class="about">Terms Of Use</a>
+                <a href="" class="about">Privacy Policy</a>
+                <a href="" class="about">Digital Services Act</a>
+                <a href="" class="about">Global Sitemap</a>
+            </div>
+            <div class="inside-third">
+                <p class="view-p">COMMUNITY</p>
+                <a href="" class="about">Community Central</a>
+                <a href="" class="about">Support</a>
+                <a href="" class="about">Help</a>
+                <br>
+                <br>
+                <p class="view-p">ADVERSITE</p>
+                <a href="" class="about">Media Kit</a>
+                <a href="" class="about">Contact</a>
+            </div>
+            <div class="inside-fourth">
+                <p class="view-p">FANDOM APP</p>
+                <p class="view-second">Take your favorite fandoms with you and never miss a beat.</p>
+                <div class="app-store">
+                    <img src="https://static.wikia.nocookie.net/6c42ce6a-b205-41f5-82c6-5011721932e7" alt="">
+                    <div class="app-store-item">
+                        <img src="https://static.wikia.nocookie.net/464fc70a-5090-490b-b47e-0759e89c263f" alt="">
+                        <img src="https://static.wikia.nocookie.net/f7bb9d33-4f9a-4faa-88fe-2a0bd8138668" alt=""
+                            class="playmarket">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-p">
+            Copyright 2024 Fandom, Inc.
+        </p>
+    </div>
+    <script src="./fandom.js"></script>
+</body>
+
+</html>

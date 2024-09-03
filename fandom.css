@@ -1,0 +1,933 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #520044;
+    font-family: "Roboto", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.user{
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-top: 1px solid black;
+    box-shadow: 1px  grey;
+}
+.main-div {
+    position: fixed;
+    width: 60px;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    align-items: center;
+    top: 0px;
+}
+
+.logo {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.wds-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.fa-magnifying-glass,
+.fa-rocket,
+.wds-icon,
+.fa-film,
+.fa-tv,
+.fa-video,
+.fa-book-open {
+    font-size: 20px;
+    margin-top: 18px;
+}
+
+.fa-tv,
+.fa-video,
+.wikis {
+    font-size: 18px;
+}
+
+.rocket,
+.tv,
+.video,
+.wikis,
+.game,
+.anime,
+.movie {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    align-items: center;
+    font-size: 13px;
+    justify-content: center;
+}
+
+.rocket-p {
+    text-align: center;
+}
+
+.user {
+    font-size: 22px;
+}
+
+.background-part {
+    padding-top: 15px;
+    background-color: black;
+    padding-bottom: 15px;
+    z-index: -1;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 0px;
+}
+
+.second-logo {
+    width: 300px;
+    height: 100px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.body-conatainer {
+    position: relative;
+    z-index: 0;
+    background: url("https://static.wikia.nocookie.net/0dfbc1cb-6311-45e0-8b74-fc965ca9afc7"), linear-gradient(151.47deg, #fa005a -21.32%, #280033 77.37%), #520044;
+    width: 100%;
+    height: 100vh;
+    top: 110px;
+}
+
+
+.sign {
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: transparent;
+     border: 1px solid white;
+    color: white;
+    font-weight: 800;
+    transition: 0.4s;
+}
+.sign:hover{
+    border: 1px solid rgb(202, 198, 198);
+    color: rgb(202, 198, 198);
+}
+.register {
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 5px;
+    background-color: rgb(255, 194, 80);
+    height: 35px;
+    width: 140px;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.register:hover,.wikis-info:hover{
+    background-color: rgb(255, 208, 121);
+}
+.register-p {
+    font-weight: 700;
+    margin-left: 6px;
+}
+
+.button {
+    display: flex;
+    margin-top: 10px;
+}
+
+.upper-part {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-left: 100px;
+    margin-top: 10px;
+}
+
+.search {
+    width: 800px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #280033;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 20px;
+    position: relative;
+    left: 40px;
+    color: white;
+}
+
+.search::placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px;
+    position: relative;
+}
+
+.main-container i {
+    position: absolute;
+    top: 119px;
+    right: -30px;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 100px;
+    padding: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.films {
+    background-image: url('https://static.wikia.nocookie.net/1e17bced-251e-4c43-b3ac-ed39ee07cb94');
+    background-color: #69082c8f;
+    height: 300px;
+    width: 90%;
+    background-repeat: repeat;
+    margin: auto;
+    margin-left: 90px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.film-list {
+    display: flex;
+    margin-left: 10px;
+}
+p{
+    cursor: pointer;
+}
+.film-info,
+.film-infoo,.film-infoo-third,.film-infoo-fourth,.film-infoo-fifth,.film-infoo-sixth,.film-infoo-seventh,.film-infoo-eight {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: #520044;
+    height: 280px;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.film-infoo,.film-infoo-third,.film-infoo-fourth,.film-infoo-fifth,.film-infoo-sixth,.film-infoo-seventh,.film-infoo-eight {
+    margin-left: 20px;
+}
+
+.first {
+    width: 120px;
+    border-radius: 5px;
+}
+
+.games {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    background-color: #fa005a;
+    padding: 5px;
+    position: absolute;
+    left: 0px;
+    top: 38px;
+}
+
+.inside-p,.inside-second-p,.inside-third-p,.inside-fourth-p,.inside-fifth-p,.inside-sixth-p,.inside-seventh-p,.inside-eight-p{
+    color: white;
+    font-weight: 700;
+    width: 100px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.next-part {
+    width: 100%;
+    height: 280px;
+    background-color: #280033;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 10px solid #fa005a;
+}
+
+.wikis-info i {
+    margin: 0px;
+    font-size: 17px;
+    margin-right: 10px
+}
+b{
+    color: #ffc500;
+}
+.wikis-info {
+    display: flex;
+    background-color: rgb(255, 194, 80);
+    color: black;
+    padding: 5px;
+    width: 140px;
+    height: 40px;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    left: 40px;
+    transition: 0.4s;
+}
+
+.top {
+    font-weight: 800;
+}
+
+.games-part,
+.movie-part,
+.tv-part,
+.anime-part,
+.right-part {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    position: relative;
+    top: 90px;
+    right: 20px;
+    margin-right: 40px;
+    padding-right: 30px;
+}
+
+.upper-info {
+    color: rgb(255, 194, 80);
+    font-weight: 800;
+    font-weight: 20px;
+}
+
+.down-p,
+.down-p-item {
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.cammon-part {
+    display: flex;
+}
+
+.down-p-item {
+    margin-top: 10px;
+}
+
+.just-border {
+    border-right: 1px solid rgba(255, 255, 255, 0.392);
+    position: relative;
+    right: 60px;
+    height: 120px;
+    margin-top: 50px;
+    top: 30px;
+}
+
+.right-part-p {
+    color: white;
+    width: 150px;
+}
+
+.right-part {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.right-part i {
+    background-color: rgb(255, 194, 80);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.4s;
+}
+.right-part i:hover{
+    background-color: #ffdf74;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+.panel-head,
+.panel-head-item {
+    padding-left: 90px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.panel-head-item {
+    position: relative;
+    top: -50px;
+    margin-bottom: -40px;
+}
+
+.watch {
+    color: white;
+    background-color: #fa005a;
+    font-size: 30px;
+    font-weight: 800;
+    width: 120px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 45px;
+    border-top: 10px solid #520044;
+    position: relative;
+    top: -10px;
+    transition: 0.6s;
+}
+.watch:hover{
+    background-color: #520044;
+    border-top: 10px solid #fa005a;
+}
+.second-page {
+    width: 100%;
+}
+
+.view {
+    font-size: 16px;
+    font-weight: 800;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+img{
+    cursor: pointer;
+}
+.panel-head i {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.godzilla{
+    margin-left: 15px;
+}
+.panel-head-item i {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.popular {
+    font-size: 23px;
+    font-weight: 700;
+    color: #520044;
+}
+
+.panel {
+    height: 100%;
+    z-index: 101;
+    background-color: rgb(245, 242, 242);
+}
+
+.watch-list,
+.watch-list-two {
+    margin-left: 90px;
+    padding-bottom: 190px;
+}
+
+.watch-list-two {
+    padding: 0px;
+}
+
+.watch-list-item {
+    display: flex;
+    margin-top: 30px;
+
+}
+
+.harry-potter,
+.matrix {
+    display: flex;
+    flex-direction: column;
+}
+
+.matrix,
+.harley-quin,
+.snake-eyes,
+.cammon-thing {
+    margin-left: 15px;
+}
+
+.cammon-thing {
+    margin-left: 15px;
+}
+
+.lara {
+    margin-left: 0px;
+}
+
+.snake-eyes {
+    position: relative;
+    right: 15px;
+}
+
+.harry-img {
+    width: 125px;
+    height: 125px;
+    border-bottom: 4px solid #fa005a;
+}
+
+.watch-list-item i {
+    font-size: 11px;
+    margin-bottom: 18px;
+    margin-right: 5px;
+}
+
+.film-name {
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 8px;
+    color: #520044;
+}
+
+.wiki-item,
+.wiki-item-dif {
+    font-size: 14px;
+}
+
+.wiki-item-dif {
+    width: 120px;
+    margin-top: 15px;
+}
+
+.harry-wiki,
+.matrix-wiki,
+.harley-wiki,
+.snake-wiki {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+    position: relative;
+    right: -2px;
+}
+
+.snake-wiki {
+    right: 15px;
+}
+
+.matrix-wiki {
+    right: 18px;
+}
+
+.section,
+.section-new {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.deadpool,
+.strange,
+.play,
+.play-item {
+    position: relative;
+    margin-top: 50px;
+}
+
+.strange,
+.play-item {
+    margin-left: 25px;
+}
+
+.dead,
+.dead-img {
+    width: 400px;
+    position: relative;
+    border-radius: 3px;
+}
+
+.dead-img {
+    width: 350px;
+}
+
+.game-spot,
+.game-spot-item,.game-spot-second {
+    color: white;
+    background-color: #fa005a;
+    font-size: 14px;
+    font-weight: 800;
+    width: 120px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+    position: absolute;
+    bottom: 41px;
+    left: 130px;
+}
+
+.game-spot-item {
+    left: 110px;
+}
+
+.white-part,
+.white-part-item {
+    background-color: white;
+    width: 350px;
+    height: 160px;
+    position: absolute;
+    bottom: -119px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.white-part-item {
+    width: 320px;
+    left: 15px;
+}
+
+.best {
+    font-size: 22px;
+    width: 300px;
+    text-align: center;
+}
+
+.best-item {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    width: 330px;
+}
+
+.row,
+.row-item,
+.row-new,
+.row-new-second {
+    display: flex;
+}
+
+.row-item {
+    margin-top: 100px;
+}
+
+.border-bottom {
+    border-bottom: 10px solid #fa005a;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.third-page {
+    background-color: white;
+    height: 100vh;
+}
+
+.panel-head-item {
+    background-color: rgb(245, 242, 242);
+    padding-bottom: 10px;
+}
+
+.watch-list-second {
+    margin: 0px;
+}
+
+.wiki-item-new {
+    font-size: 14px;
+    width: 100px;
+}
+
+.snake-wiki-item,
+.snake-wiki-itemm {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    bottom: 10px;
+    right: 5px;
+}
+
+.snake-wiki-item i {
+    font-size: 10px;
+}
+
+.snake-wiki-item p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.wiki-item-neww {
+    position: relative;
+    bottom: 7px;
+}
+
+.snake-wiki-itemm i {
+    position: relative;
+    right: 15px;
+}
+
+.snake-wiki-itemm p {
+    font-size: 14px;
+    margin-top: 15px;
+    position: relative;
+    right: 15px;
+}
+
+.row-new,
+.row-new-second {
+    padding-left: 90px;
+}
+
+.section-new {
+    padding-left: 90px;
+}
+
+.third-page {
+    background-color: rgb(245, 242, 242);
+    height: 200vh;
+}
+
+.white-part-item p {
+    font-size: 13px;
+    width: 300px;
+}
+
+.row-new-second {
+    position: relative;
+    top: 90px;
+}
+
+.last-page {
+    padding: 90px;
+    height: 90vh;
+    position: relative;
+    background-color: #520044;
+    background-repeat: no-repeat;
+    background-image: url(https://static.wikia.nocookie.net/643f0817-5bc1-414f-ac2a-936539ae3b20);
+    display: flex;
+
+}
+
+.last {
+    font-weight: 900;
+    color: #ffc500;
+    font-size: 50px;
+    width: 400px;
+
+    line-height: 50px;
+}
+
+.last-p-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.email {
+    border: none;
+    background-color: transparent;
+    margin-block: 30px;
+    border-bottom: 1px solid white;
+    color: white;
+    padding-left: 5px;
+    padding-bottom: 8px;
+    width: 250px;
+}
+
+.stay {
+    color: white;
+    z-index: 300;
+    margin-top: 30px;
+}
+
+.email::placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+.sign-up {
+    width: 80px;
+    color: #520044;
+    font-weight: 800;
+    font-size: 13px;
+    background-color: #ffc500;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.img-part {
+    position: absolute;
+    right: 90px;
+    bottom: -4px;
+
+}
+
+.end {
+    height: 80vh;
+    background-color: #280033;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.inside {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inside-third {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-second {
+    width: 200px;
+}
+
+.inside-first {
+    display: flex;
+    flex-direction: column;
+    margin-right: 90px;
+}
+
+.view-p {
+    margin-left: 0px;
+}
+
+.inside-first p,
+.view-p {
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+    margin-block: 20px;
+}
+
+.inside-third {
+    margin-inline: 30px;
+}
+
+.last-a,
+.about {
+    text-decoration: none;
+    color: #ffc500;
+    margin-block: 5px;
+    font-size: 15px;
+}
+
+.follow {
+    margin-top: 15px;
+}
+
+.fa-twitter,
+.fa-youtube,
+.fa-instagram,
+.fa-linkedin-in {
+    margin-left: 20px;
+}
+
+.inside-second {
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+}
+
+.inside-fourth {
+    margin-left: 70px;
+}
+
+.view-second {
+    width: 240px;
+    color: white;
+}
+
+.app-store {
+    display: flex;
+    margin-top: 30px;
+}
+
+.app-store img {
+    margin-right: 10px;
+    width: 90px;
+    height: 90px;
+}
+
+.app-store-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-store-item img {
+    width: 130px;
+    height: 40px;
+}
+
+.playmarket {
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-p {
+    color: white;
+    font-size: 14px;
+}
+i{
+    cursor: pointer;
+}
+.hide-part{
+    width: 170px;
+    height: 130px;
+    position: absolute;
+    bottom: 0px;
+    left: 60px;
+    background-color: white;
+    border-radius: 5px;
+    /* z-index: 200; */
+    border: 1px solid rgb(211, 211, 211);
+}
+.hide-p{
+    text-align: center;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.hide-part button{
+    width: 120px;
+    height: 30px;
+}
+.register-button{
+    background-color: #280033;
+    color: white;  
+    border: none;
+}
+.sign-up-button{
+    background-color: transparent;
+    color: #280033;
+    border: 1px solid #280033;
+    margin-top: 10px;
+}
